@@ -1,0 +1,173 @@
+{
+    "status": {
+        "statusCode": 0,
+        "message": "SUCCESS"
+    },
+    "portfolios": [
+        2
+    ],
+    "userPortfolios": [ 
+        {
+            "emailAddress": "jacek@jacek4.com",
+            "portfolioName": "JK1",
+            "createdOn": "2014/04/22 10:30:01",
+            "updatedOn": "2014/04/22 10:30:01",
+            "positions": [
+                2
+            ],
+            "snapshot": false,
+            "portfolioAssets": [
+                {
+                    "asset": [{
+                        "assetID": 200,
+                        "ticker": "GIEIX",
+                        "assetName": "GE Instl International Equity Inv",
+                        "description": "Invest at least 80% of its net assets under normal circumstances in equity securities, such as common and preferred stocks. Invests primarily (meaning at least 65%) in companies located in both developed and emerging market countries outside the U.S.",
+                        "assetClass": "EQUITY",
+                        "multiplier": 0,
+                        "timeLastUpdated": 0,
+                        "rankings": 
+                            [ {
+                                "scenarioID": 1,
+                                "scenarioName": "Strong",
+                                "rank": 5,
+                                "annualReturn": 1313
+                            },
+                             {
+                                "scenarioID": 2,
+                                "scenarioName": "Weak",
+                                "rank": 2,
+                                "annualReturn": -1223
+                            },
+                             {
+                                "scenarioID": 3,
+                                "scenarioName": "Normal",
+                                "rank": 3,
+                                "annualReturn": 413
+                            },
+                             {
+                                "scenarioID": 4,
+                                "scenarioName": "2008",
+                                "rank": 2,
+                                "annualReturn": -2355
+                            },
+                             {
+                                "scenarioID": 5,
+                                "scenarioName": "1987",
+                                "rank": 3,
+                                "annualReturn": 413
+                            },
+                             {
+                                "scenarioID": 6,
+                                "scenarioName": "Fed Hikes",
+                                "rank": 2,
+                                "annualReturn": -230
+                            },
+                             {
+                                "scenarioID": 7,
+                                "scenarioName": "Euro Crisis",
+                                "rank": 5,
+                                "annualReturn": 1890
+                            },
+                             {
+                                "scenarioID": 8,
+                                "scenarioName": "Oil War",
+                                "rank": 3,
+                                "annualReturn": -1243
+                            }
+                            ]
+                        
+                    }],
+                    "quantity": 3000,
+                    "priceInCents": 2303,
+                    "createdOn": "2014/04/22 10:30:01",
+                    "updatedOn": "2014/04/22 10:30:01"
+                },
+                {
+                    "asset": [{
+                        "assetID": 400,
+                        "ticker": "GSVIX",
+                        "assetName": "GE Instl Small-Cap Equity Inv ",
+                        "description": "Invests at least 80% of its net assets under normal circumstances in equity securities of small-cap companies, such as common and preferred stocks",
+                        "assetClass": "EQUITY",
+                        "multiplier": 0,
+                        "timeLastUpdated": 0,
+                        "rankings": [
+                             {
+                                "scenarioID": 1,
+                                "scenarioName": "Strong",
+                                "rank": 5,
+                                "annualReturn": 1313
+                            },
+                             {
+                                "scenarioID": 2,
+                                "scenarioName": "Weak",
+                                "rank": 2,
+                                "annualReturn": -1223
+                            },
+                             {
+                                "scenarioID": 3,
+                                "scenarioName": "Normal",
+                                "rank": 3,
+                                "annualReturn": 413
+                            },
+                             {
+                                "scenarioID": 4,
+                                "scenarioName": "2008",
+                                "rank": 2,
+                                "annualReturn": -2355
+                            },
+                             {
+                                "scenarioID": 5,
+                                "scenarioName": "1987",
+                                "rank": 3,
+                                "annualReturn": 413
+                            },
+                             {
+                                "scenarioID": 6,
+                                "scenarioName": "Fed Hikes",
+                                "rank": 2,
+                                "annualReturn": -230
+                            },
+                             {
+                                "scenarioID": 7,
+                                "scenarioName": "Euro Crisis",
+                                "rank": 5,
+                                "annualReturn": 1890
+                            },
+                             {
+                                "scenarioID": 8,
+                                "scenarioName": "Oil War",
+                                "rank": 3,
+                                "annualReturn": -1243
+                            }
+                        ]
+                    }],
+                    "quantity": 5000,
+                    "priceInCents": 2200,
+                    "createdOn": "2014/04/22 10:30:01",
+                    "updatedOn": "2014/04/22 10:30:01"
+                }
+            ]
+        },
+        {
+            "emailAddress": "jacek@jacek4.com",
+            "portfolioName": "JK1",
+            "createdOn": "2014/04/22 10:28:11",
+            "updatedOn": "2014/04/22 10:28:11",
+            "positions": [
+                1
+            ],
+            "snapshot": false,
+            "portfolioAssets": [ 
+                {
+                    "asset": null,
+                    "quantity": 0,
+                    "priceInCents": 0,
+                    "createdOn": "1969/12/31 19:00:00",
+                    "updatedOn": "1969/12/31 19:00:00"
+                }
+            ]
+        }
+    ]
+}
