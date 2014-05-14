@@ -2,6 +2,8 @@
 
 Refactoring that which is JSON.
 
+[Demo](http://demo.tannerhodges.com/katelyn-loops/)
+
 ## Refactored JS (Sample)
 
 ```javascript
