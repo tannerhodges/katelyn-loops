@@ -1,32 +1,50 @@
-$.each(jsonData, function (i, v) {
-  if (i == "userPortfolios") {
-    $.each(v, function (i1, v1) {
-      $.each(v1, function (i2, v2) {
-        if(i2=="portfolioAssets"){
-          $.each(v2, function (i3, v3) {
-            $.each(v3, function (i4, v4) {
-              if(i4=="asset" && v4 != null){
-                $.each(v4, function (i5, v5) {
-                  $.each(v5, function (i6, v6) {
-                    if(i6=="assetClass"){
-                      console.log(i6 + "=" + v6);
-                      //if an accordion for the asset class exists, do this:
-                      if ( $.inArray( v6, classList ) > -1 ){
-                        //addToExisting(v6);
-                      }
-                      //if an accordion for the asset class does not exist, do this:
-                      else{
-                        //createNew(v6);
-                        classList.push(v6);
-                      }
-                    }
-                  });
-                });
-              }
-            });
-          });
-        }
+// Get your JSON data to get the party started
+// http://api.jquery.com/jQuery.getJSON/
+$.getJSON('data.json', function(data) { parseMyData(data) });
+
+/**
+ * Fancy function to parse through your JSON data
+ * @param  json data Contents of your JSON file
+ * @return void
+ */
+var parseMyData = function(data) {
+
+  // Loop through the user's portfolios
+  $.each(data.userPortfolios, function(index, portfolio) {
+
+    // Loop through each portfolio's assets
+    $.each(portfolio.portfolioAssets, function(index, assetMeta) {
+
+      // Make sure the asset data exists, otherwise continue
+      if ( ! assetMeta.asset) { return true }
+
+      // Loop through asset data <-- Not sure why this is in an array?
+      $.each(assetMeta.asset, function(index, asset) {
+
+        // Store your class-handling logic in a separate function
+        // - just to keep things neat
+        doSomethingWithYourClass(asset.assetClass);
       });
     });
-  }
-});
+  });
+}
+
+/**
+ * Do whatever it is you do
+ * @param  string class Name of a portfolio's asset class
+ * @return void
+ */
+var doSomethingWithYourClass = function(assetClass) {
+
+  $('#output').append('<li>' + assetClass + '</li>');
+
+  // Original code below:
+
+  // if ( $.inArray( assetClass, classList ) !== -1 ) {
+  //   // addToExisting(assetClass);
+  // }
+  // else {
+  //   // createNew(assetClass);
+  //   classList.push(assetClass);
+  // }
+}
